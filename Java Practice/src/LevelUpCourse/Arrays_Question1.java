@@ -10,6 +10,9 @@ import java.util.HashSet;
 
 public class Arrays_Question1 {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = {10, 5, 2, 3, -6, 9, 11};

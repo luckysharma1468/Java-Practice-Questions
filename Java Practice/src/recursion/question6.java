@@ -3,7 +3,9 @@ package recursion;
 import java.util.Scanner;
 
 /*
- * Take as input str, a string. Write a recursive function which returns a new string in which all duplicate consecutive characters are separated by a ‘ * ’. E.g. for “hello” return “hel*lo”. Print the value returned
+ * Take as input str, a string. Write a recursive function which returns a new string
+ *  in which all duplicate consecutive characters are separated by a ï¿½ * ï¿½. E.g.
+ *  for ï¿½helloï¿½ return ï¿½hel*loï¿½. Print the value returned
 
 Input Format
 Enter a String

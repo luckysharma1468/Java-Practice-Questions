@@ -3,10 +3,14 @@ package recursion;
 import java.util.Scanner;
 
 /*
- * Take as input N, the size of array. Take N more inputs and store that in an array. Take as input M, a number. Write a recursive function which returns an array containing indices of all items in the array which have value equal to M. Print all the values in the returned array.
+ * Take as input N, the size of array. Take N more inputs and store that in an array.
+ *  Take as input M, a number. Write a recursive function which returns an array containing 
+ * indices of all items in the array which have value equal to M.
+ *  Print all the values in the returned array.
 
 Input Format
-Enter a number N(size of the array) and add N more numbers to the array Enter number M to be searched in the array
+Enter a number N(size of the array) and add N more numbers to the array 
+Enter number M to be searched in the array
 
 Constraints
 1 <= Size of array <= 10^5

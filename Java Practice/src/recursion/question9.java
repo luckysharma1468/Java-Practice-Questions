@@ -3,7 +3,9 @@ package recursion;
 import java.util.Scanner;
 
 /*
- * Take as input str, a number in form of a string. Write a recursive function to convert the number in string form to number in integer form. E.g. for “1234” return 1234. Print the value returned.
+ * Take as input str, a number in form of a string. Write a recursive function to convert 
+ * the number in string form to number in integer form. E.g. for ï¿½1234ï¿½ return 1234. 
+ * Print the value returned.
 
 Input Format
 Enter a number in form of a String

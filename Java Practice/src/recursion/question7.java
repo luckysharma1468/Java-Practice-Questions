@@ -3,7 +3,9 @@ package recursion;
 import java.util.Scanner;
 
 /*
- * Take as input str, a string. Write a recursive function which returns a new string in which all duplicate consecutive characters are reduced to a single char. E.g. for “hello” return “helo”. Print the value returned.
+ * Take as input str, a string. Write a recursive function which returns a new string
+ *  in which all duplicate consecutive characters are reduced to a single char. 
+ * E.g. for ï¿½helloï¿½ return ï¿½heloï¿½. Print the value returned.
 
 Input Format
 Enter the string

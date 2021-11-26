@@ -6,7 +6,8 @@ import java.util.*;
  * Given an array A, of N elements. Sort the array using mergesort algorithm.
 
 Input Format
-A single integer, N, denoting the number of elements in array. Next line contains N integers, denoting the elements of array.
+A single integer, N, denoting the number of elements in array.
+ Next line contains N integers, denoting the elements of array.
 
 Constraints
 1<=N<=2*10^5

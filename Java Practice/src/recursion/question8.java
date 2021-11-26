@@ -3,8 +3,9 @@ package recursion;
 import java.util.Scanner;
 
 /*
- * Take as input str, a string. Write a recursive function which moves all ‘x’ from the string to its end.
-E.g. for “abexexdexed” return “abeedeedxxx”.
+ * Take as input str, a string. Write a recursive function which moves all ï¿½xï¿½
+ *  from the string to its end.
+E.g. for ï¿½abexexdexedï¿½ return ï¿½abeedeedxxxï¿½.
 Print the value returned
 
 Input Format

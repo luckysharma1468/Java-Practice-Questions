@@ -3,7 +3,9 @@ package recursion;
 import java.util.*;
 
 /*
- * Take as input str, a string. Write a recursive function which prints all the words possible by rearranging the characters of this string which are in dictionary order larger than the given string.
+ * Take as input str, a string. Write a recursive function which prints all the words 
+ * possible by rearranging the characters of this string which are in dictionary order larger
+ *  than the given string.
 The output strings must be lexicographically sorted.
 
 Input Format
@@ -13,7 +15,8 @@ Constraints
 Length of string <= 10
 
 Output Format
-Display all the words which are in dictionary order larger than the string entered in a new line each. The output strings must be sorted.
+Display all the words which are in dictionary order larger than the string entered in a new line each.
+ The output strings must be sorted.
 
 Sample Input
 cab
@@ -21,7 +24,8 @@ cab
 Sample Output
 cba
 Explanation
-The possible permutations of string "cab" are "abc" , "acb" ,"bac" , "bca" , "cab" and "cba" . Only one of them is lexicographically greater than "cab". We only print "cba".
+The possible permutations of string "cab" are "abc" , "acb" ,"bac" , "bca" , "cab" and "cba" . 
+Only one of them is lexicographically greater than "cab". We only print "cba".
  */
 
 public class question11 {

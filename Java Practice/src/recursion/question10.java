@@ -3,15 +3,20 @@ package recursion;
 import java.util.Scanner;
 
 /*
- * Take as input str, a string. str represents keys pressed on a nokia phone keypad. We are concerned with all possible words that can be written with the pressed keys.
+ * Take as input str, a string. str represents keys pressed on a nokia phone keypad.
+ *  We are concerned with all possible words that can be written with the pressed keys.
 
-Assume the following alphabets on the keys: 1 -> abc , 2 -> def , 3 -> ghi , 4 -> jkl , 5 -> mno , 6 -> pqrs , 7 -> tuv , 8 -> wx , 9 -> yz
+Assume the following alphabets on the keys: 1 -> abc , 2 -> def , 3 -> ghi , 4 -> jkl , 5 -> mno 
+, 6 -> pqrs , 7 -> tuv , 8 -> wx , 9 -> yz
 
-E.g. “12” can produce following words “ad”, “ae”, “af”, “bd”, “be”, “bf”, “cd”, “ce”, “cf”
+E.g. ï¿½12ï¿½ can produce following words ï¿½adï¿½, ï¿½aeï¿½, ï¿½afï¿½, ï¿½bdï¿½, ï¿½beï¿½, 
+ï¿½bfï¿½, ï¿½cdï¿½, ï¿½ceï¿½, ï¿½cfï¿½
 
-a. Write a recursive function which returns the count of words for a given keypad string. Print the value returned.
+a. Write a recursive function which returns the count of words for a given keypad string. 
+Print the value returned.
 
-b.Write a recursive function which prints all possible words for a given keypad string (void is the return type for function).
+b.Write a recursive function which prints all possible words for a given keypad 
+string (void is the return type for function).
 
 Input Format
 Single line input containing a single integer.

@@ -8,7 +8,7 @@ import java.util.*;
 
 // Just Iterate backwards from peak until we found the element which is not decreasing 
 // (means it is started increasing) <--- Its count will be X
-// Just Iterate backwards from peak until we found the element which is not increasing 
+// Just Iterate forward from peak until we found the element which is not increasing 
 // (means it is started decreasing) <--- Its count will be Y
 
 // X + Y = Highest Mountain Peak (Diameter of longest increasing and decreasing subarray) 

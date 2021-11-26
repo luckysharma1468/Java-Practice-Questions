@@ -3,7 +3,9 @@ package recursion;
 import java.util.*;
 
 /*
- * Take as input str, a string. Write a recursive function which returns all the words possible by rearranging the characters of this string which are in dictionary order smaller than the given string. The output strings must be lexicographically sorted.
+ * Take as input str, a string. Write a recursive function which returns all the words 
+ * possible by rearranging the characters of this string which are in dictionary order 
+ * smaller than the given string. The output strings must be lexicographically sorted.
 
 Input Format
 Single line input containing a string
@@ -12,7 +14,8 @@ Constraints
 Length of string <= 25
 
 Output Format
-Display all the words which are in dictionary order smaller than the string entered in a new line each. The output strings must be sorted.
+Display all the words which are in dictionary order smaller than the string entered in a new line each. 
+The output strings must be sorted.
 
 Sample Input
 cab
