@@ -8,6 +8,8 @@ import java.util.*;
 
 // int[] arr = {1, 3, 2, 1, 4, 1, 3, 2, 1, 1, 2};
 
+// Target sum -> 8
+
 // Sample Output
 
 // 2 5
@@ -118,7 +120,9 @@ public class SlidingWindow_Question1 {
 	
 	
 	// Approach - 3
-	// To be validated
+	// As we know the prefix sum --> we can now use that sum to find the complement number using
+	// binary search.
+	// For calculating prefix sum -> T.C -> O(N) and to find the index, T.C will be -> O(NLogN)
 	// O(NLogN)
 	public static ArrayList<ArrayList<Integer>> approach3(int[] arr, int n, int target){
 		
@@ -130,15 +134,14 @@ public class SlidingWindow_Question1 {
 			sum += arr[i];
 			PS[i] = sum;
 		}
-		
+		System.out.println(Arrays.toString(PS));
 		for(int i=0; i<n; i++) {
-			int comp = target + arr[i];
+			int comp = target + PS[i];
 			
 			int index = binarySearch(PS, 0, n-1, comp);
-			System.out.println(comp + " " + index);
 			if(index != -1) {
 				ArrayList<Integer> temp = new ArrayList<>();
-				temp.add(i);
+				temp.add(i+1);
 				temp.add(index);
 				
 				result.add(temp);
@@ -167,41 +170,41 @@ public class SlidingWindow_Question1 {
 		return -1;
 	}
 	
+	
+	// Approach - 4
+	// Sliding Window -> Dynamic window
+	// T.C -> O(N)
 	public static ArrayList<ArrayList<Integer>> approach4(int[] arr, int n, int target){
 		ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
 		
 		int i =0; 
 		int j = 0;
+		int currSum = 0;
 		
-		while( i< n && j < n) {
-			if(i != j) {
-				if(arr[i] + arr[j] == target) {
-					ArrayList<Integer> temp = new ArrayList<>();
-					temp.add(i);
-					temp.add(j);
-					
-					result.add(temp);
-					i++;
-					j++;
-				}
-				else if(arr[i] + arr[j] > target){
-					i++;
-				}else {
-					j++;
-				}
+		while(j < n) {
+			
+			// Expanding towards right
+			currSum += arr[j];
+			j++;
+			
+			// Shrinking from left side till the current sum is greater then target
+			// and i is less then j
+			
+			while(currSum > target && i<j) {
+				currSum -= arr[i];
+				i++;
 			}
-			else if(arr[i] == target) {
+			
+			// if there is a window of sum equal to target then add it to the result.
+			
+			if(currSum == target) {
 				ArrayList<Integer> temp = new ArrayList<>();
 				temp.add(i);
-				temp.add(j);
-				
+				temp.add(j-1);
 				result.add(temp);
-				i++;
-				j++;
-			}else{
-				j++;
 			}
 		}
+		
 		
 		return result;
 	}
