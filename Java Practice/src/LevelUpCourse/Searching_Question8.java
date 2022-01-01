@@ -3,6 +3,11 @@ import java.util.*;
 // Divide coins array into K partitions such that, minimum value in 
 // one of the partition is maximum.
 
+				// OR
+
+// Divide books array contatining pages into k partitions such that, minimum number of
+// pages assigned to a student is maximum
+
 // Sample Input 
 
 //  int k = 3;
@@ -69,8 +74,8 @@ public class Searching_Question8{
 	}
 
 	public static void main(String[] args) {
-		int k = 3;
-		int[] coins = {1, 2, 3, 4};
+		int k = 2;
+		int[] coins = {10, 20, 30, 45};
 
 		int result = kCoins(coins, coins.length, k);
 
